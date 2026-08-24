@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday & Congratulations Minki! 🌸🎓</title>
+    <title>Happy Busdei my Pretty Miminkiii 🫶🎓</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500;700&family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500;700&family=Zen+Maru+Gothic:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- Three.js Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <style>
@@ -17,7 +17,7 @@
         }
 
         body {
-            background-color: #0b0d19;
+            background-color: #ffffff;
             color: #4a2e35;
             overflow-x: hidden;
             min-height: 100vh;
@@ -28,7 +28,6 @@
             position: relative;
         }
 
-        /* Canvas background for Three.js */
         #webgl-bg {
             position: fixed;
             top: 0;
@@ -39,186 +38,269 @@
             pointer-events: none;
         }
 
-        /* Top archive link banner */
         .archive-banner {
             position: fixed;
             top: 20px;
             right: 20px;
             z-index: 20;
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(8px);
+            background: #fff;
             padding: 8px 16px;
-            border-radius: 20px;
-            border: 1px solid rgba(224, 112, 142, 0.4);
+            border-radius: 8px;
+            border: 3px solid #0B346E;
             font-size: 0.9rem;
-            color: #d64b76;
+            font-weight: bold;
+            color: #0B346E;
             text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 4px 4px 0px #d64b76;
+            transition: all 0.2s ease;
         }
 
         .archive-banner:hover {
-            background: #d64b76;
-            color: white;
-            transform: translateY(-2px);
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px #d64b76;
         }
 
-        /* Glassmorphism Main Container */
+        /* Anime/Manga Style Main Container */
         .container {
             position: relative;
             z-index: 10;
-            max-width: 750px;
-            width: 90%;
-            margin: 40px auto;
-            background: rgba(255, 250, 245, 0.88);
-            backdrop-filter: blur(12px);
-            border-radius: 24px;
+            max-width: 800px;
+            width: 92%;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
             padding: 40px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-            border: 2px solid rgba(255, 182, 193, 0.6);
+            /* Thick anime-style borders and offset shadow */
+            border: 4px solid #0B346E;
+            box-shadow: 12px 12px 0px #ffb7c5;
             text-align: center;
         }
 
+        /* Kyoto University Themed Badge */
         .badge-kyoto {
             display: inline-block;
-            background: linear-gradient(135deg, #d64b76, #e83e8c);
+            background: #0B346E; /* Kyoto Uni Blue */
             color: white;
-            padding: 6px 18px;
-            border-radius: 30px;
-            font-size: 0.95rem;
-            font-weight: 500;
-            letter-spacing: 1px;
-            margin-bottom: 15px;
-            box-shadow: 0 4px 10px rgba(214, 75, 118, 0.3);
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            border: 2px solid #fff;
+            box-shadow: 4px 4px 0px #d64b76;
+            text-transform: uppercase;
         }
 
         h1 {
-            font-size: 2.8rem;
-            color: #c0392b;
-            margin-bottom: 10px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+            font-size: 3rem;
+            color: #d64b76;
+            margin-bottom: 5px;
+            font-family: 'Zen Maru Gothic', sans-serif;
+            font-weight: 900;
+            -webkit-text-stroke: 1px #0B346E; /* Anime text outline effect */
         }
 
         .subtitle {
             font-size: 1.4rem;
-            color: #7e4a4a;
-            margin-bottom: 25px;
-            font-weight: 400;
+            color: #0B346E;
+            margin-bottom: 30px;
+            font-weight: 700;
+            background: #fff0f3;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            border: 2px dashed #d64b76;
         }
 
-        .photo-frame {
-            width: 100%;
-            max-width: 420px;
-            height: 260px;
-            margin: 0 auto 25px auto;
-            border-radius: 16px;
-            overflow: hidden;
-            border: 3px solid #e8a7b8;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        /* NEW: Two Panel Photo Grid */
+        .photo-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 35px;
+            flex-wrap: wrap;
+        }
+
+        /* Polaroid Anime Style Panels */
+        .photo-panel {
+            width: 280px;
+            height: 280px;
+            background: #fff;
+            border: 3px solid #0B346E;
+            padding: 12px 12px 40px 12px; /* Polaroid bottom heavy padding */
+            box-shadow: 6px 6px 0px rgba(11, 52, 110, 0.2);
             position: relative;
-            background: #fff3f5;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
         }
 
-        .photo-frame img {
+        .photo-panel.tilt-left {
+            transform: rotate(-4deg);
+        }
+
+        .photo-panel.tilt-right {
+            transform: rotate(5deg);
+        }
+
+        .photo-panel:hover {
+            transform: scale(1.05) rotate(0deg);
+            z-index: 5;
+            box-shadow: 10px 10px 0px #ffb7c5;
+        }
+
+        .photo-inner {
+            width: 100%;
+            height: 100%;
+            border: 2px dashed #d64b76;
+            background: #fff9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* IMPORTANT: Update these img sources to your pictures */
+        .photo-inner img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
         }
 
-        .phd-congrats-card {
-            background: linear-gradient(135deg, rgba(255,235,240,0.9), rgba(255,245,230,0.9));
-            border-radius: 16px;
-            padding: 20px 25px;
-            margin: 20px 0;
-            border-left: 5px solid #d64b76;
-            text-align: left;
-        }
-
-        .phd-congrats-card h3 {
-            color: #b02a52;
-            font-size: 1.25rem;
-            margin-bottom: 8px;
+        .photo-placeholder {
+            color: #d64b76;
+            font-weight: bold;
+            z-index: 1;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
-        .phd-congrats-card p {
-            font-size: 1.05rem;
-            color: #5c3a3a;
-            line-height: 1.6;
+        .panel-caption {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            color: #0B346E;
+            font-size: 1.1rem;
         }
 
-        .details {
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 16px;
+        /* Info Cards */
+        .info-card {
+            background: #fff;
+            border-radius: 12px;
             padding: 20px;
-            margin: 25px 0;
+            margin: 20px 0;
+            border: 3px solid #0B346E;
+            box-shadow: 6px 6px 0px #e6f0fa;
             text-align: left;
-            border: 1px solid #f0c2cf;
+            position: relative;
         }
 
-        .details p {
-            margin: 12px 0;
+        .info-card::before {
+            content: "✦";
+            position: absolute;
+            top: -12px;
+            left: -12px;
+            color: #d64b76;
+            font-size: 1.5rem;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        .info-card h3 {
+            color: #0B346E;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            border-bottom: 2px dashed #ffb7c5;
+            padding-bottom: 5px;
+        }
+
+        .info-card p {
+            margin: 10px 0;
             font-size: 1.1rem;
             display: flex;
             align-items: center;
             color: #4a2e35;
         }
 
-        .details i {
+        .info-card i {
             width: 32px;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: #d64b76;
         }
 
         .message {
-            font-style: italic;
-            font-size: 1.15rem;
-            color: #6e3b47;
-            margin: 25px 0;
+            font-size: 1.2rem;
+            color: #0B346E;
+            margin: 30px 0;
             line-height: 1.6;
+            font-weight: 500;
+            background: #fff9fa;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid #ffb7c5;
         }
 
         .japanese-text {
             display: block;
-            font-style: normal;
-            font-size: 1.5rem;
-            color: #c0392b;
-            margin-top: 10px;
+            font-size: 1.6rem;
+            color: #d64b76;
+            margin-top: 15px;
             font-family: 'Zen Maru Gothic', sans-serif;
-            font-weight: 700;
+            font-weight: 900;
         }
 
+        /* Anime Button */
         .rsvp-btn {
-            background: linear-gradient(135deg, #d64b76, #c0392b);
+            background: #d64b76;
             color: white;
-            border: none;
-            padding: 16px 45px;
-            font-size: 1.2rem;
-            border-radius: 50px;
+            border: 3px solid #0B346E;
+            padding: 15px 45px;
+            font-size: 1.3rem;
+            border-radius: 8px;
             cursor: pointer;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 6px 20px rgba(214, 75, 118, 0.4);
+            font-weight: 900;
+            text-transform: uppercase;
+            transition: all 0.2s ease;
+            box-shadow: 4px 4px 0px #0B346E;
         }
 
         .rsvp-btn:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 10px 25px rgba(214, 75, 118, 0.6);
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px #0B346E;
+            background: #e83e8c;
+        }
+
+        .rsvp-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px #0B346E;
         }
 
         .footer {
             margin-top: 30px;
-            font-size: 0.95rem;
-            color: #7e4a4a;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #0B346E;
         }
 
-        @media (max-width: 600px) {
-            h1 { font-size: 2.1rem; }
-            .subtitle { font-size: 1.15rem; }
-            .container { padding: 25px 20px; }
-            .photo-frame { height: 200px; }
+        @media (max-width: 650px) {
+            .container { padding: 25px 15px; border-width: 3px; box-shadow: 8px 8px 0px #ffb7c5;}
+            h1 { font-size: 2.2rem; }
+            .photo-panel { width: 100%; max-width: 260px; height: 260px; }
+            .photo-grid { gap: 20px; }
         }
     </style>
 </head>
@@ -229,112 +311,112 @@
 
     <!-- Archive Link to Previous Year -->
     <a href="2025.html" class="archive-banner">
-        <i class="fas fa-history"></i> View 2025 Invitation
+        <i class="fas fa-history"></i> 2025 Invite
     </a>
 
     <!-- Main Card -->
     <div class="container">
-        <span class="badge-kyoto">⛩️ Kyoto PhD Bound • Birthday Edition ⛩️</span>
-        <h1>🎉 Happy Birthday! 🎉</h1>
+        <div class="badge-kyoto">🎓 Kyoto Univ Bound ⛩️</div>
+        <h1>Happy Birthday!</h1>
         <div class="subtitle">For my prettiest miminkiii :3</div>
 
-        <div class="photo-frame">
-            <img src="minki_pic.jpg" alt="Minki">
+        <!-- TWO PHOTO PANELS -->
+        <div class="photo-grid">
+            <!-- Panel 1 -->
+            <div class="photo-panel tilt-left">
+                <div class="photo-inner">
+                   
+                    <!-- REMOVE COMMENTS BELOW & ADD YOUR IMAGE -->
+                    <img src="minki_jp.jpg" alt="iminki"> 
+                </div>
+                <div class="panel-caption">カワイイ 💕</div>
+            </div>
+
+            <!-- Panel 2 -->
+            <div class="photo-panel tilt-right">
+                <div class="photo-inner">
+                     <img src="minki_spiderman.jpg" alt="Us 2"> 
+                </div>
+                <div class="panel-caption">minki wash spideriman 🕸️</div>
+            </div>
         </div>
 
-        <!-- PhD Congratulatory Section -->
-        <div class="phd-congrats-card">
-            <h3>🎓 Next Chapter: Kyoto University PhD!</h3>
+        <!-- Info Card: PhD -->
+        <div class="info-card">
+            <h3>🎓 Next Chapter: Kyoto University!</h3>
             <p>Huge congratulations on taking this amazing leap for your PhD in Kyoto! I am so proud of you. Before you fly off to start your adventure in Japan, let's celebrate your birthday in style!</p>
         </div>
 
-        <!-- Party Details -->
-        <div class="details">
-            <p><i class="fas fa-calendar-alt"></i> <strong>Date:</strong> Tuesday, August 25, 2026</p>
+        <!-- Info Card: Details -->
+        <div class="info-card">
+            <h3>🎉 Party Details</h3>
+            <p><i class="fas fa-calendar-check"></i> <strong>Date:</strong> Tuesday, August 25, 2026</p>
             <p><i class="fas fa-clock"></i> <strong>Time:</strong> 6:00 PM onwards</p>
             <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Kyoto Send-off & Birthday Dinner</p>
-            <p><i class="fas fa-tshirt"></i> <strong>Dress Code:</strong> Cute & Cozy / Kyoto Vibe</p>
+            <p><i class="fas fa-tshirt"></i> <strong>Dress Code:</strong> Cute & Cozy / Anime Vibes</p>
         </div>
 
         <div class="message">
             "Celebrating the smartest & prettiest person as she gets ready to conquer Kyoto!"
-            <span class="japanese-text">おたんじょうびおめでとう & 京都留学おめでとう！🌸</span>
+            <span class="japanese-text">お誕生日おめでとう！<br>京都留学おめでとう！🌸</span>
         </div>
 
-        <button class="rsvp-btn" id="rsvpBtn">RSVP Now</button>
+        <button class="rsvp-btn" id="rsvpBtn">RSVP Yatta! ✌️</button>
 
         <div class="footer">
             Made with ♥ by <strong>MEMEUUU</strong> for you
         </div>
     </div>
 
-    <!-- Three.js Scene Setup -->
+    <!-- Three.js Scene Setup (Daylight/White Theme) -->
     <script>
-        // -------------------------------------------------------------
-        // 1. Scene, Camera, Renderer Setup
-        // -------------------------------------------------------------
         const canvas = document.getElementById('webgl-bg');
         const scene = new THREE.Scene();
         
-        // Soft Kyoto Night Gradient Background
-        scene.fog = new THREE.FogExp2(0x0f1026, 0.035);
+        scene.background = new THREE.Color(0xffffff);
+        scene.fog = new THREE.FogExp2(0xffffff, 0.035);
 
         const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
         camera.position.set(0, 3, 10);
 
-        const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
+        const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
         renderer.shadowMap.enabled = true;
 
-        // -------------------------------------------------------------
-        // 2. Lighting
-        // -------------------------------------------------------------
-        const ambientLight = new THREE.AmbientLight(0xffe6eb, 0.6);
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
         scene.add(ambientLight);
 
-        const moonLight = new THREE.DirectionalLight(0x88aaff, 0.8);
-        moonLight.position.set(-5, 10, -5);
-        scene.add(moonLight);
+        const sunLight = new THREE.DirectionalLight(0xffffff, 1.2);
+        sunLight.position.set(-5, 10, -5);
+        sunLight.castShadow = true;
+        scene.add(sunLight);
 
-        // Warm glowing point light from the center (Torii illumination)
-        const warmGlow = new THREE.PointLight(0xff7744, 2, 15);
-        warmGlow.position.set(0, 2, 0);
-        scene.add(warmGlow);
-
-        // -------------------------------------------------------------
-        // 3. Procedural 3D Kyoto Torii Gate
-        // -------------------------------------------------------------
+        // Procedural 3D Kyoto Torii Gate
         const toriiGroup = new THREE.Group();
-        const vermilionMat = new THREE.MeshStandardMaterial({ color: 0xd32f2f, roughness: 0.3 });
-        const blackMat = new THREE.MeshStandardMaterial({ color: 0x111111, roughness: 0.5 });
+        const vermilionMat = new THREE.MeshStandardMaterial({ color: 0xe62e2e, roughness: 0.4 });
+        const blackMat = new THREE.MeshStandardMaterial({ color: 0x1a1a1a, roughness: 0.6 });
 
-        // Pillars
         const pillarGeo = new THREE.CylinderGeometry(0.2, 0.25, 6, 16);
         const leftPillar = new THREE.Mesh(pillarGeo, vermilionMat);
         leftPillar.position.set(-2.5, 3, 0);
-
         const rightPillar = new THREE.Mesh(pillarGeo, vermilionMat);
         rightPillar.position.set(2.5, 3, 0);
 
-        // Pillar Bases (Kamebara)
         const baseGeo = new THREE.CylinderGeometry(0.35, 0.4, 0.6, 16);
         const leftBase = new THREE.Mesh(baseGeo, blackMat);
         leftBase.position.set(-2.5, 0.3, 0);
         const rightBase = new THREE.Mesh(baseGeo, blackMat);
         rightBase.position.set(2.5, 0.3, 0);
 
-        // Top Main Beam (Kasagi)
         const topBeamGeo = new THREE.BoxGeometry(6.8, 0.4, 0.5);
         const topBeam = new THREE.Mesh(topBeamGeo, vermilionMat);
         topBeam.position.set(0, 5.8, 0);
 
-        // Top Roof Cap (Black)
         const capGeo = new THREE.BoxGeometry(7.0, 0.15, 0.6);
         const cap = new THREE.Mesh(capGeo, blackMat);
         cap.position.set(0, 6.05, 0);
 
-        // Lower Tie Beam (Nuki)
         const lowerBeamGeo = new THREE.BoxGeometry(6.0, 0.3, 0.35);
         const lowerBeam = new THREE.Mesh(lowerBeamGeo, vermilionMat);
         lowerBeam.position.set(0, 4.8, 0);
@@ -343,107 +425,63 @@
         toriiGroup.position.set(0, -1, -2);
         scene.add(toriiGroup);
 
-        // -------------------------------------------------------------
-        // 4. Floating 3D Paper Lanterns
-        // -------------------------------------------------------------
-        const lanterns = [];
-        const lanternGeo = new THREE.CylinderGeometry(0.3, 0.3, 0.8, 12);
-        const lanternMat = new THREE.MeshBasicMaterial({ color: 0xffddaa });
-
-        for (let i = 0; i < 6; i++) {
-            const lantern = new THREE.Mesh(lanternGeo, lanternMat);
-            const angle = (i / 6) * Math.PI * 2;
-            const radius = 5 + Math.random() * 2;
-            
-            lantern.position.set(
-                Math.cos(angle) * radius,
-                1 + Math.random() * 3,
-                Math.sin(angle) * radius - 2
-            );
-
-            // Add soft light inside lantern
-            const pLight = new THREE.PointLight(0xffaa44, 1, 4);
-            lantern.add(pLight);
-            
-            scene.add(lantern);
-            lanterns.push({
-                mesh: lantern,
-                initialY: lantern.position.y,
-                speed: 0.001 + Math.random() * 0.002,
-                offset: Math.random() * Math.PI * 2
-            });
-        }
-
-        // -------------------------------------------------------------
-        // 5. Falling Sakura Petals Particle System
-        // -------------------------------------------------------------
-        const petalCount = 300;
+        // Falling Sakura Petals Particle System
+        const petalCount = 400;
         const petalGeometry = new THREE.BufferGeometry();
         const positions = new Float32Array(petalCount * 3);
         const velocities = [];
 
         for (let i = 0; i < petalCount; i++) {
-            positions[i * 3] = (Math.random() - 0.5) * 20;
-            positions[i * 3 + 1] = Math.random() * 15;
-            positions[i * 3 + 2] = (Math.random() - 0.5) * 20;
+            positions[i * 3] = (Math.random() - 0.5) * 25; 
+            positions[i * 3 + 1] = Math.random() * 15;      
+            positions[i * 3 + 2] = (Math.random() - 0.5) * 20; 
 
             velocities.push({
                 y: 0.01 + Math.random() * 0.02,
-                x: (Math.random() - 0.5) * 0.01,
-                z: (Math.random() - 0.5) * 0.01
+                x: (Math.random() - 0.5) * 0.015,
+                z: (Math.random() - 0.5) * 0.015
             });
         }
 
         petalGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
-        // Create canvas texture for smooth Sakura particle
         const createPetalTexture = () => {
             const canvas = document.createElement('canvas');
             canvas.width = 32;
             canvas.height = 32;
             const ctx = canvas.getContext('2d');
-            ctx.fillStyle = '#ffb7c5';
+            ctx.fillStyle = '#ff6b8b'; 
             ctx.beginPath();
-            ctx.arc(16, 16, 12, 0, Math.PI * 2);
+            ctx.arc(16, 16, 10, 0, Math.PI * 2);
             ctx.fill();
             return new THREE.CanvasTexture(canvas);
         };
 
         const petalMaterial = new THREE.PointsMaterial({
-            size: 0.25,
+            size: 0.35,
             map: createPetalTexture(),
             transparent: true,
-            opacity: 0.8,
+            opacity: 0.9,
             depthWrite: false
         });
 
         const petalParticles = new THREE.Points(petalGeometry, petalMaterial);
         scene.add(petalParticles);
 
-        // -------------------------------------------------------------
-        // 6. Animation Loop & Interactivity
-        // -------------------------------------------------------------
+        // Animation Loop
         let clock = new THREE.Clock();
 
         function animate() {
             requestAnimationFrame(animate);
             const elapsedTime = clock.getElapsedTime();
 
-            // Gently rotate Torii Gate
-            toriiGroup.rotation.y = Math.sin(elapsedTime * 0.3) * 0.15;
+            toriiGroup.rotation.y = Math.sin(elapsedTime * 0.2) * 0.1;
 
-            // Float Lanterns up/down
-            lanterns.forEach(l => {
-                l.mesh.position.y = l.initialY + Math.sin(elapsedTime + l.offset) * 0.4;
-            });
-
-            // Animate Sakura Petals
             const posArray = petalGeometry.attributes.position.array;
             for (let i = 0; i < petalCount; i++) {
                 posArray[i * 3 + 1] -= velocities[i].y;
                 posArray[i * 3] += Math.sin(elapsedTime + i) * 0.005;
 
-                // Reset position when hitting bottom
                 if (posArray[i * 3 + 1] < -2) {
                     posArray[i * 3 + 1] = 12;
                     posArray[i * 3] = (Math.random() - 0.5) * 20;
@@ -456,23 +494,20 @@
 
         animate();
 
-        // Window Resize Handling
         window.addEventListener('resize', () => {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
             renderer.setSize(window.innerWidth, window.innerHeight);
         });
 
-        // RSVP Interactive Boost
         document.getElementById('rsvpBtn').addEventListener('click', () => {
-            alert("✨ Yay! RSVP Received! Get ready for Kyoto vibes & Birthday fun! ✨");
-            // Speed up petal fall temporarily on click
+            alert("✨ Nani?! RSVP Received! Get ready for Kyoto vibes & Birthday fun! ✨");
             for (let i = 0; i < petalCount; i++) {
-                velocities[i].y *= 2;
+                velocities[i].y *= 3;
             }
             setTimeout(() => {
                 for (let i = 0; i < petalCount; i++) {
-                    velocities[i].y /= 2;
+                    velocities[i].y /= 3;
                 }
             }, 3000);
         });
